@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="javas.js"></script>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>forms</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="javas.js"></script>
 </head>
 <body>
-    
+
+     
+    <div class="Main-Holder">
+        <div class="Background">
+        <img src="images/pokemonlogo.png" alt="pokemon logo">
+        </div>
+        <div class="Form">
+            <div class="form-header">
+                <h3>This is not a real online service! 
+                    You know you need something like this
+                     in your life to help you realize your deepest dreams.
+                     <br> Sign up now to get started.</h3> 
+                     <h3>You <em>know</em> you want to.</h3>
+            </div>
+            <div class="form-body">
+                <form id="form-tag" action="#" method="post">
+                    <p class="form-paragraph">Lets Do this!</p>
+                        <div class="first-section form-section">
+                            <label for="nameFor">First name:
+                                <input name="client-name" type="text" id="nameFor" placeholder="Your name"
+                                required>
+                            </label>
+                            <label for="lastNameFor">Last Name: 
+                                <input name="client-lastname" type="text" id="lastNameFor" placeholder="Your Last Name" 
+                                required>
+                            </label>
+                        </div>
+                        <div class="second-section form-section">
+                            <label for="emailFor">Email:
+                                <input name="client-email" type="email" id="emailFor" placeholder="email@direction.com"
+                                >
+                            </label>
+                            <label for="phoneFor">Phone Number:
+                                <input name="client-phone" type="tel" id="phoneFor" min="8"
+                                >
+                            </label>
+                        </div>
+                        <div class="third-section form-section">
+                            <label for="passwordFor">Password: 
+                                <input name="client-password" type="password" id="passwordFor"
+                                pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$" 
+                                required>
+                            </label>
+                            <label for="confPasswordFor">confirm password: 
+                                <input name="client-confPassword" type="password" id="confPasswordFor"
+                                pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$" 
+                                required>
+                            </label>
+                        </div>
+
+                </form>
+            </div>
+            <div class="form-feet">
+                <button class="submit-button" type="submit" form="form-tag">Create Account</button>
+                <br>
+                <p class="logIn"><span>Already have an account? <a href="blanck">Log in</a></span></p>
+            </div>
+        </div>    
+
+    </div>
+
 </body>
 </html>
+

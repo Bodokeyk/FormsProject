@@ -1,0 +1,116 @@
+
+html, body, .Main-Holder{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a{
+    color: #003092;
+    font-weight: 700;
+}
+.Main-Holder{
+    display: flex;
+    
+}
+.Background{
+    box-sizing: border-box;
+    min-width: 40%;
+    height: 100%;
+    background-image: url(images/pokemon\ image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 70%;
+    display: flex;
+    justify-content: stretch;
+
+}
+.Background img{
+    flex: 1 1 auto; 
+    background-color: #0031927c;
+    margin-top: 200px;
+    height: 200px;
+    width: 600px;
+    width: 300px;
+    
+}
+.Form{
+    box-sizing: border-box;
+    align-self: center;
+    max-width: 60%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 40px;
+}
+.form-header{
+    font-size: large;
+}
+
+.form-body{
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+    margin-left: -40px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 2 0;
+    box-shadow: 0 2px 5px 0px rgb(190, 190, 190);  
+}
+.form-paragraph{
+    font-size: large;
+    font-weight: 500; 
+    margin: 0;
+    padding: 0;
+}
+#form-tag{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 25px;
+}
+form label{
+    color: #4e4d4d;
+}
+.form-feet{
+    flex: 1 2 0;
+    margin-top: 20px;
+}
+.form-section{
+    display: flex;
+    gap: 50px;
+}
+.form-section label{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    font-weight: 500;
+}
+input{
+    width: 200px;
+    height: 24px;
+    border: solid 0.5px gray;
+}
+.submit-button{
+    width: 200px;
+    height: 42px;
+    background-color: #003092;
+    border-radius: 15px;
+    border: #003092 ;
+    color:yellow ;
+    font-weight: 700;
+    box-shadow: 0 3px 3px 0 #000000;
+}
+.submit-button:hover{
+background-color: #174196;
+}
+input:focus{
+    border: #003092;
+    box-shadow: #4e4d4d 0 3px 3px 0;
+}
+:invalid {
+    border-color: rgb(238, 15, 15);
+  }
